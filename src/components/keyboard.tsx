@@ -5,18 +5,15 @@ interface KeyboardProps {
   onKeyPressed: (key: string) => void;
 }
 
-export default function Keyboard({
-  keys,
- onKeyPressed
-}: KeyboardProps) {
+export default function Keyboard({ keys, onKeyPressed }: KeyboardProps) {
   function handleInput(e: any) {
     onKeyPressed(e.target.textContent);
   }
   function handleEnter(e: any) {
-    onKeyPressed('ENTER');
+    onKeyPressed("ENTER");
   }
   function handleDelete(e: any) {
-    onKeyPressed('BACKSPACE');
+    onKeyPressed("BACKSPACE");
   }
   return (
     <div className={styles.keyboardContainer}>
@@ -31,16 +28,16 @@ export default function Keyboard({
           {keys[i + 10]}
         </button>
       ))}
-      <button className={styles.enterKey} onClick={handleEnter}>
-        ENTER
+      <button className={styles.deleteKey} onClick={handleDelete}>
+        DELETE
       </button>
       {Array.from(Array(7)).map((_, i) => (
         <button key={i + 19} className={styles.key} onClick={handleInput}>
           {keys[i + 19]}
         </button>
       ))}
-      <button className={styles.deleteKey} onClick={handleDelete}>
-        DELETE
+      <button className={styles.enterKey} onClick={handleEnter}>
+        ENTER
       </button>
     </div>
   );
