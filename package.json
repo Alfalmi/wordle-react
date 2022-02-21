@@ -1,6 +1,6 @@
 {
   "name": "wordle",
-  "homepage": "https://alfalmi.com/wordle-react",
+  "homepage": "https://alfalmi.com/wordle-react/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
