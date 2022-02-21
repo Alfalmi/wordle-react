@@ -4,3 +4,9 @@
     width: ($size * 5) + ($gap * 5);
     margin: 100px auto;
 }
+
+@media (min-width: 600px) {
+    .mainContainer {
+        width: ($size * 5) + ($gap * 5);
+    }
+}
