@@ -111,7 +111,7 @@
       height: 30px;
     }
     .emptyKey {
-      width: 10px;
+      width: 15px;
       height: 25px;
       display: flex;
       align-items: center;
@@ -120,13 +120,13 @@
     
     .enterKey {
       @include keybase;
-      width: 45px;
+      width: 50px;
       height: 30px;
     }
     
     .deleteKey {
       @include keybase;
-      width: 45px;
+      width: 50px;
       height: 30px;
     }
     
