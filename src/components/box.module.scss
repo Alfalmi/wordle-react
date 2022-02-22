@@ -46,8 +46,8 @@
 @media (max-width: 1000px) {
   @mixin box {
    
-    width: $size/1.5;
-    height: $size/1.5;
+    width: 60px;
+    height: 60px;
     
 }
 }
@@ -55,8 +55,8 @@
 @media (max-width: 650px) {
   @mixin box {
     
-    width: $size/1.8;
-    height: $size/1.8;
+    width: $size/1.2;
+    height: $size/1.2;
    
 }
 }
