@@ -41,3 +41,22 @@
     @include box;
 }
 
+
+
+@media (max-width: 1000px) {
+  @mixin box {
+   
+    width: $size/1.5;
+    height: $size/1.5;
+    
+}
+}
+
+@media (max-width: 650px) {
+  @mixin box {
+    
+    width: $size/1.8;
+    height: $size/1.8;
+   
+}
+}

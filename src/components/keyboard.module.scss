@@ -60,11 +60,48 @@
     color: black;
   }
 
+  
+
+  @media (max-width: 1000px) {
+    .keyboardContainer {
+      display: flex;
+      flex-wrap: wrap;
+      width: 500px;
+      margin: 0 auto;
+      gap: 5px;
+    }
+    .key {
+      @include keybase;
+      width: 45px;
+      height: 50px;
+    }
+    .emptyKey {
+      width: 20px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .enterKey {
+      @include keybase;
+      width: 60px;
+      height: 50px;
+    }
+    
+    .deleteKey {
+      @include keybase;
+      width: 60px;
+      height: 50px;
+    }
+    
+  }
+
   @media (max-width: 650px) {
     .keyboardContainer {
       display: flex;
       flex-wrap: wrap;
-      width: 460px;
+      width: 450px;
       margin: 0 auto;
       gap: 5px;
     }

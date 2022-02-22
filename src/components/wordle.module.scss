@@ -4,9 +4,16 @@
     width: ($size * 5) + ($gap * 5);
     margin: 100px auto;
 }
-
-@media (min-width: 600px) {
+@media (max-width: 1000px) {
     .mainContainer {
-        width: ($size * 5) + ($gap * 5);
+        width: ($size * 4) + ($gap * 4);
+        margin: 100px auto;
     }
 }
+@media (max-width: 640px) {
+    .mainContainer {
+        width: ($size * 3) + ($gap * 3);
+        margin: 100px auto;
+    }
+}
+
