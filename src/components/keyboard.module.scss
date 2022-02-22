@@ -60,4 +60,38 @@
     color: black;
   }
 
-
+  @media (max-width: 650px) {
+    .keyboardContainer {
+      display: flex;
+      flex-wrap: wrap;
+      width: 460px;
+      margin: 0 auto;
+      gap: 5px;
+    }
+    .key {
+      @include keybase;
+      width: 40px;
+      height: 45px;
+    }
+    .emptyKey {
+      width: 15px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .enterKey {
+      @include keybase;
+      width: 50px;
+      height: 40px;
+    }
+    
+    .deleteKey {
+      @include keybase;
+      width: 50px;
+      height: 40px;
+    }
+    
+  }
+    
