@@ -2,12 +2,12 @@
 
 .mainContainer {
   width: ($size * 5) + ($gap * 5);
-  margin: 100px auto;
+  margin: 75px auto;
 }
 @media (max-width: 1000px) {
   .mainContainer {
     width: ($size * 5) + ($gap * 3);
-    margin: 40px auto;
+    margin: 40px 100vw/2;
   }
 }
 @media (max-width: 640px) {
