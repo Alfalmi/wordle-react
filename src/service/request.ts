@@ -1,8 +1,12 @@
 import { WORDS } from "./words";
 
+
 function getWords() {
   return WORDS;
 }
+
+
+
 
 export function getWordOfTheDay() {
   const words = getWords();
